@@ -1,0 +1,30 @@
+{
+  "configurations" : [
+    {
+      "id" : "5C7C2F6C-6A4B-4562-9F87-5610F1F7CBD9",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Mastermind.xcodeproj",
+      "identifier" : "6B1BE7DD2BEA89EC0025AC58",
+      "name" : "Mastermind"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Mastermind.xcodeproj",
+        "identifier" : "6B1BE7F22BEA8BCD0025AC58",
+        "name" : "MastermindTests"
+      }
+    }
+  ],
+  "version" : 1
+}
