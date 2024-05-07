@@ -11,7 +11,18 @@
 		6B1BE7E42BEA89EC0025AC58 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1BE7E32BEA89EC0025AC58 /* ContentView.swift */; };
 		6B1BE7E62BEA89EE0025AC58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B1BE7E52BEA89EE0025AC58 /* Assets.xcassets */; };
 		6B1BE7E92BEA89EE0025AC58 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B1BE7E82BEA89EE0025AC58 /* Preview Assets.xcassets */; };
+		6B1BE7F62BEA8BCD0025AC58 /* MastermindTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1BE7F52BEA8BCD0025AC58 /* MastermindTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6B1BE7F72BEA8BCD0025AC58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B1BE7D62BEA89EC0025AC58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B1BE7DD2BEA89EC0025AC58;
+			remoteInfo = Mastermind;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		6B1BE7DE2BEA89EC0025AC58 /* Mastermind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mastermind.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,10 +30,19 @@
 		6B1BE7E32BEA89EC0025AC58 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6B1BE7E52BEA89EE0025AC58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B1BE7E82BEA89EE0025AC58 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6B1BE7F32BEA8BCD0025AC58 /* MastermindTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MastermindTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B1BE7F52BEA8BCD0025AC58 /* MastermindTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MastermindTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		6B1BE7DB2BEA89EC0025AC58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B1BE7F02BEA8BCD0025AC58 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				6B1BE7E02BEA89EC0025AC58 /* Mastermind */,
+				6B1BE7F42BEA8BCD0025AC58 /* MastermindTests */,
 				6B1BE7DF2BEA89EC0025AC58 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				6B1BE7DE2BEA89EC0025AC58 /* Mastermind.app */,
+				6B1BE7F32BEA8BCD0025AC58 /* MastermindTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +89,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		6B1BE7F42BEA8BCD0025AC58 /* MastermindTests */ = {
+			isa = PBXGroup;
+			children = (
+				6B1BE7F52BEA8BCD0025AC58 /* MastermindTests.swift */,
+			);
+			path = MastermindTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -87,6 +117,24 @@
 			productReference = 6B1BE7DE2BEA89EC0025AC58 /* Mastermind.app */;
 			productType = "com.apple.product-type.application";
 		};
+		6B1BE7F22BEA8BCD0025AC58 /* MastermindTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B1BE7F92BEA8BCD0025AC58 /* Build configuration list for PBXNativeTarget "MastermindTests" */;
+			buildPhases = (
+				6B1BE7EF2BEA8BCD0025AC58 /* Sources */,
+				6B1BE7F02BEA8BCD0025AC58 /* Frameworks */,
+				6B1BE7F12BEA8BCD0025AC58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B1BE7F82BEA8BCD0025AC58 /* PBXTargetDependency */,
+			);
+			name = MastermindTests;
+			productName = MastermindTests;
+			productReference = 6B1BE7F32BEA8BCD0025AC58 /* MastermindTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +147,10 @@
 				TargetAttributes = {
 					6B1BE7DD2BEA89EC0025AC58 = {
 						CreatedOnToolsVersion = 15.3;
+					};
+					6B1BE7F22BEA8BCD0025AC58 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 6B1BE7DD2BEA89EC0025AC58;
 					};
 				};
 			};
@@ -116,6 +168,7 @@
 			projectRoot = "";
 			targets = (
 				6B1BE7DD2BEA89EC0025AC58 /* Mastermind */,
+				6B1BE7F22BEA8BCD0025AC58 /* MastermindTests */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +180,13 @@
 			files = (
 				6B1BE7E92BEA89EE0025AC58 /* Preview Assets.xcassets in Resources */,
 				6B1BE7E62BEA89EE0025AC58 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B1BE7F12BEA8BCD0025AC58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +202,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6B1BE7EF2BEA8BCD0025AC58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B1BE7F62BEA8BCD0025AC58 /* MastermindTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6B1BE7F82BEA8BCD0025AC58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B1BE7DD2BEA89EC0025AC58 /* Mastermind */;
+			targetProxy = 6B1BE7F72BEA8BCD0025AC58 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		6B1BE7EA2BEA89EE0025AC58 /* Debug */ = {
@@ -322,6 +398,42 @@
 			};
 			name = Release;
 		};
+		6B1BE7FA2BEA8BCD0025AC58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 949Z9P63ML;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ignasiperez.MastermindTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mastermind.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Mastermind";
+			};
+			name = Debug;
+		};
+		6B1BE7FB2BEA8BCD0025AC58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 949Z9P63ML;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ignasiperez.MastermindTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mastermind.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Mastermind";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -339,6 +451,15 @@
 			buildConfigurations = (
 				6B1BE7ED2BEA89EE0025AC58 /* Debug */,
 				6B1BE7EE2BEA89EE0025AC58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B1BE7F92BEA8BCD0025AC58 /* Build configuration list for PBXNativeTarget "MastermindTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B1BE7FA2BEA8BCD0025AC58 /* Debug */,
+				6B1BE7FB2BEA8BCD0025AC58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
