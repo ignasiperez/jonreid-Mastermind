@@ -12,7 +12,7 @@ struct MastermindApp: App {
     var body: some Scene {
         WindowGroup {
             if isProduction {
-                ContentView()
+                GameScreen()
             }
         }
     }

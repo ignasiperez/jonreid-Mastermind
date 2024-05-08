@@ -15,7 +15,7 @@ final class MastermindTests: XCTestCase {
 
     func test_circle_shouldBeRed() throws {
         // Make ContentView
-        let view = ContentView()
+        let view = GameScreen()
         
         // Find Circle
         let color = try view.inspect().shape().foregroundColor()

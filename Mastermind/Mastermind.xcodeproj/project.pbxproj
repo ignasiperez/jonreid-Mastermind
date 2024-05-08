@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6B1BE7E22BEA89EC0025AC58 /* MastermindApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1BE7E12BEA89EC0025AC58 /* MastermindApp.swift */; };
-		6B1BE7E42BEA89EC0025AC58 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1BE7E32BEA89EC0025AC58 /* ContentView.swift */; };
+		6B1BE7E42BEA89EC0025AC58 /* GameScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1BE7E32BEA89EC0025AC58 /* GameScreen.swift */; };
 		6B1BE7E62BEA89EE0025AC58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B1BE7E52BEA89EE0025AC58 /* Assets.xcassets */; };
 		6B1BE7E92BEA89EE0025AC58 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B1BE7E82BEA89EE0025AC58 /* Preview Assets.xcassets */; };
 		6B1BE7F62BEA8BCD0025AC58 /* MastermindTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1BE7F52BEA8BCD0025AC58 /* MastermindTests.swift */; };
@@ -28,7 +28,7 @@
 /* Begin PBXFileReference section */
 		6B1BE7DE2BEA89EC0025AC58 /* Mastermind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mastermind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B1BE7E12BEA89EC0025AC58 /* MastermindApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MastermindApp.swift; sourceTree = "<group>"; };
-		6B1BE7E32BEA89EC0025AC58 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6B1BE7E32BEA89EC0025AC58 /* GameScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScreen.swift; sourceTree = "<group>"; };
 		6B1BE7E52BEA89EE0025AC58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B1BE7E82BEA89EE0025AC58 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6B1BE7F32BEA8BCD0025AC58 /* MastermindTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MastermindTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,7 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				6B1BE7E12BEA89EC0025AC58 /* MastermindApp.swift */,
-				6B1BE7E32BEA89EC0025AC58 /* ContentView.swift */,
+				6B1BE7E32BEA89EC0025AC58 /* GameScreen.swift */,
 				6B1BE7E52BEA89EE0025AC58 /* Assets.xcassets */,
 				6B1BE7E72BEA89EE0025AC58 /* Preview Content */,
 			);
@@ -207,7 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B1BE7E42BEA89EC0025AC58 /* ContentView.swift in Sources */,
+				6B1BE7E42BEA89EC0025AC58 /* GameScreen.swift in Sources */,
 				6B1BE7E22BEA89EC0025AC58 /* MastermindApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
