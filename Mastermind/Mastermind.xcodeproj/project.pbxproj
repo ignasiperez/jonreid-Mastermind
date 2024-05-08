@@ -11,7 +11,7 @@
 		6B1BE7E42BEA89EC0025AC58 /* GameScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1BE7E32BEA89EC0025AC58 /* GameScreen.swift */; };
 		6B1BE7E62BEA89EE0025AC58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B1BE7E52BEA89EE0025AC58 /* Assets.xcassets */; };
 		6B1BE7E92BEA89EE0025AC58 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B1BE7E82BEA89EE0025AC58 /* Preview Assets.xcassets */; };
-		6B1BE7F62BEA8BCD0025AC58 /* MastermindTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1BE7F52BEA8BCD0025AC58 /* MastermindTests.swift */; };
+		6B1BE7F62BEA8BCD0025AC58 /* GameScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1BE7F52BEA8BCD0025AC58 /* GameScreenTests.swift */; };
 		6B1BE7FF2BEA99B50025AC58 /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = 6B1BE7FE2BEA99B50025AC58 /* ViewInspector */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +32,7 @@
 		6B1BE7E52BEA89EE0025AC58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B1BE7E82BEA89EE0025AC58 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6B1BE7F32BEA8BCD0025AC58 /* MastermindTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MastermindTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6B1BE7F52BEA8BCD0025AC58 /* MastermindTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MastermindTests.swift; sourceTree = "<group>"; };
+		6B1BE7F52BEA8BCD0025AC58 /* GameScreenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScreenTests.swift; sourceTree = "<group>"; };
 		6B1BE7FC2BEA96FF0025AC58 /* Mastermind.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Mastermind.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,7 +96,7 @@
 		6B1BE7F42BEA8BCD0025AC58 /* MastermindTests */ = {
 			isa = PBXGroup;
 			children = (
-				6B1BE7F52BEA8BCD0025AC58 /* MastermindTests.swift */,
+				6B1BE7F52BEA8BCD0025AC58 /* GameScreenTests.swift */,
 			);
 			path = MastermindTests;
 			sourceTree = "<group>";
@@ -216,7 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B1BE7F62BEA8BCD0025AC58 /* MastermindTests.swift in Sources */,
+				6B1BE7F62BEA8BCD0025AC58 /* GameScreenTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

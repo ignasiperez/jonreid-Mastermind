@@ -1,6 +1,6 @@
 //
-//  MastermindTests.swift
-//  MastermindTests
+//  GameScreenTests.swift
+//  GameScreenTests
 //
 //  Created by Ignasi Perez-Valls on 7/5/24.
 //
@@ -11,7 +11,7 @@ import ViewInspector
 import SwiftUI
 
 // @MainActor
-final class MastermindTests: XCTestCase {
+final class GameScreenTests: XCTestCase {
 
     func test_circle_shouldBeRed() throws {
         // Make ContentView
