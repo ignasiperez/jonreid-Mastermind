@@ -11,13 +11,13 @@ import SwiftUI
 struct MastermindApp: App {
     var body: some Scene {
         WindowGroup {
-            if isProcution {
+            if isProduction {
                 ContentView()
             }
         }
     }
     
-    private var isProcution: Bool {
+    private var isProduction: Bool {
         NSClassFromString("XCTestCase") == nil
     }
 }
