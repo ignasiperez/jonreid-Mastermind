@@ -13,7 +13,7 @@ import SwiftUI
 // @MainActor
 final class GameScreenTests: XCTestCase {
     
-    private func load(
+    private func display(
         _ sut: inout GameScreen,
         using: @escaping ((InspectableView<ViewType.View<GameScreen>>) throws -> Void)
     ) {
@@ -28,7 +28,7 @@ final class GameScreenTests: XCTestCase {
             .button().labelView().shape().foregroundColor()
         XCTAssertNotEqual(color, Color.orange, "Precondition")
         
-        load(&sut) { view in
+        display(&sut) { view in
             // Tap the circle
             try view.button().tap()
             
