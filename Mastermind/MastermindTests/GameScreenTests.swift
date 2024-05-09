@@ -12,16 +12,24 @@ import SwiftUI
 
 // @MainActor
 final class GameScreenTests: XCTestCase {
-
-    func test_circle_shouldBeRed() throws {
-        // Make ContentView
-        let view = GameScreen()
+    
+    func test_tappingCircle_turnsItOrange() throws {
+        var sut = GameScreen()
+        var color = try sut.inspect()
+            .button().labelView().shape().foregroundColor()
+        XCTAssertNotEqual(color, Color.orange, "Precondition")
         
-        // Find Circle
-        let color = try view.inspect().shape().foregroundColor()
+        sut.on(\.didAppear) { view in
+            // Tap the circle
+            try view.button().tap()
+            
+            // Update the `color` variable
+            color = try view
+                .button().labelView().shape().foregroundColor()
+        }
         
-        // Test that fill color is red
-        XCTAssertEqual(color, Color.red)
+        ViewHosting.host(view: sut)
+        XCTAssertEqual(color, Color.orange)
     }
-
-}
+    
+} // GameScreenTests
