@@ -22,6 +22,12 @@ final class GameScreenTests: XCTestCase {
         wait(for: [expectation], timeout: 0.1)
     }
     
+    private func getColorOfGuess(
+        _ view: InspectableView<ViewType.View<GameScreen>>
+    ) throws -> Color? {
+        return try view.button().labelView().shape().foregroundColor()
+    }
+    
     func test_tappingCircle_turnsItOrange() throws {
         var sut = GameScreen()
         var color = try sut.inspect()
@@ -33,8 +39,7 @@ final class GameScreenTests: XCTestCase {
             try view.button().tap()
             
             // Update the `color` variable
-            color = try view
-                .button().labelView().shape().foregroundColor()
+            color = try self.getColorOfGuess(view)
         }
         
         XCTAssertEqual(color, Color.orange)
