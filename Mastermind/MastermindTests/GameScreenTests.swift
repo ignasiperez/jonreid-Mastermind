@@ -19,7 +19,7 @@ final class GameScreenTests: XCTestCase {
             .button().labelView().shape().foregroundColor()
         XCTAssertNotEqual(color, Color.orange, "Precondition")
         
-        sut.on(\.didAppear) { view in
+        let expectation = sut.on(\.didAppear) { view in
             // Tap the circle
             try view.button().tap()
             
@@ -29,6 +29,7 @@ final class GameScreenTests: XCTestCase {
         }
         
         ViewHosting.host(view: sut)
+        wait(for: [expectation], timeout: 0.1)
         XCTAssertEqual(color, Color.orange)
     }
     
