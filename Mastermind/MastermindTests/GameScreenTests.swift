@@ -19,7 +19,7 @@ final class GameScreenTests: XCTestCase {
         _ view: InspectableView<V>
     ) throws -> Color? {
         try view.asInspectableView()
-            .button().labelView().shape().foregroundColor()
+            .vStack()[0].button().labelView().shape().foregroundColor()
     }
     
     func test_tappingCircle_turnsItOrange() throws {
@@ -30,7 +30,7 @@ final class GameScreenTests: XCTestCase {
         
         display(&sut) { view in
             // Tap the circle
-            try view.button().tap()
+            try view.vStack()[0].button().tap()
             
             // Update the `color` variable
             color = try self.getColorOfGuess(view)
