@@ -1,10 +1,3 @@
-//
-//  GameScreen.swift
-//  Mastermind
-//
-//  Created by Ignasi Perez-Valls on 7/5/24.
-//
-
 import SwiftUI
 
 struct GameScreen: View {
