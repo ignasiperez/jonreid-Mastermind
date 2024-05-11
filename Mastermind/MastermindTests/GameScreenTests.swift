@@ -24,7 +24,7 @@ final class GameScreenTests: XCTestCase {
         _ view: InspectableView<V>
     ) throws -> Color? {
         try view.asInspectableView()
-            .vStack()[0].button().labelView().shape().foregroundColor()
+            .find(viewWithId: "guess1").button().labelView().shape().foregroundColor()
     }
     
     func test_tappingCircle_turnsItOrange() throws {
