@@ -35,7 +35,7 @@ final class GameScreenTests: XCTestCase {
         
         display(&sut) { view in
             // Tap the circle
-            try view.vStack()[0].button().tap()
+            try view.find(viewWithId: "guess1").button().tap()
             
             // Update the `color` variable
             color = try self.getColorOfGuess(view)
