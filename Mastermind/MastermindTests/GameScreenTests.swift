@@ -6,21 +6,21 @@ import SwiftUI
 // @MainActor
 final class GameScreenTests: XCTestCase {
     
-    func test_tappingCircle_turnsItOrange() throws {
+    func test_tappingBlueColor_shouldTurnGuessBlue() throws {
         // Get the game screen
         var sut = GameScreen()
         var color = try getColorOfGuess(try sut.inspect())
-        XCTAssertNotEqual(color, Color.orange, "Precondition")
+        XCTAssertNotEqual(color, Color.blue, "Precondition")
         
         display(&sut) { view in
-            // Tap the circle
-            try view.find(viewWithId: "guess1").button().tap()
+            // Tap color1 button
+            try view.find(viewWithId: "color1").button().tap()
             
             // Update the `color` variable
             color = try self.getColorOfGuess(view)
         }
         
-        XCTAssertEqual(color, Color.orange)
+        XCTAssertEqual(color, Color.blue)
     }
     
     private func display(
