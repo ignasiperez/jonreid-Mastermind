@@ -1,5 +1,9 @@
 import SwiftUI
 
+struct Key {
+    var color: Color
+}
+
 struct GameScreen: View {
     @State private var buttonColor = Color.red
     internal var viewInspectorHook: ((Self) -> Void)?
