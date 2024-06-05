@@ -6,9 +6,9 @@ struct CodePeg {
 
 let codePeg1 = CodePeg(color: .blue)
 let backgroundColor = Color(
-    red: 246/255,
-    green: 248/255,
-    blue: 248/255
+    red: 227/255,
+    green: 231/255,
+    blue: 234/255
 )
 
 struct GameScreen: View {
