@@ -5,27 +5,35 @@ struct CodePeg {
 }
 
 let codePeg1 = CodePeg(color: .blue)
+let backgroundColor = Color(
+    red: 246/255,
+    green: 248/255,
+    blue: 248/255
+)
 
 struct GameScreen: View {
     @State private var guess1: CodePeg?
     internal var viewInspectorHook: ((Self) -> Void)?
     
     var body: some View {
-        HStack {
-            Button(action: {
+        ZStack {
+            backgroundColor.ignoresSafeArea()
+            HStack {
+                Button(action: {
 
-            }, label: {
-                Circle().foregroundColor(guess1?.color ?? .red)
-            })
-            .id("guess1")
-            
-            CodeChoiceView(
-                codePeg: codePeg1,
-                id: "color1",
-                guess: $guess1
-            )
+                }, label: {
+                    Circle().foregroundColor(guess1?.color ?? .red)
+                })
+                .id("guess1")
+                
+                CodeChoiceView(
+                    codePeg: codePeg1,
+                    id: "color1",
+                    guess: $guess1
+                )
+            }
+            .onAppear { self.viewInspectorHook?(self) }
         }
-        .onAppear { self.viewInspectorHook?(self) }
     }
 } // GameScreen
 
