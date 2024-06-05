@@ -19,7 +19,7 @@ struct GameScreen: View {
             })
             .id("guess1")
             
-            CodePegForYourGuess(
+            CodeChoiceView(
                 codePeg: codePeg1,
                 id: "color1",
                 guess: $guess1
@@ -30,7 +30,7 @@ struct GameScreen: View {
 } // GameScreen
 
 
-struct CodePegForYourGuess: View {
+struct CodeChoiceView: View {
     var codePeg: CodePeg
     var id: String
     @Binding var guess: CodePeg?
