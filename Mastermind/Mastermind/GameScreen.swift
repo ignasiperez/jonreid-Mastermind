@@ -30,6 +30,7 @@ struct GameScreen: View {
 } // GameScreen
 
 
+private
 struct CodeChoiceView: View {
     var codePeg: CodePeg
     var id: String
