@@ -10,6 +10,11 @@ let backgroundColor = Color(
     green: 231/255,
     blue: 234/255
 )
+let unselectedColor = Color(
+    red: 185/255,
+    green: 195/255,
+    blue: 198/255
+)
 
 struct GameScreen: View {
     @State private var guess1: CodePeg?
