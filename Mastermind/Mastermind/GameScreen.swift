@@ -17,19 +17,19 @@ let unselectedColor = Color(
 )
 
 struct GameScreen: View {
-    @State private var guess1: CodePeg?
+    @State private var guess: CodePeg?
     internal var viewInspectorHook: ((Self) -> Void)?
     
     var body: some View {
         ZStack {
             backgroundColor.ignoresSafeArea()
             HStack {
-                ExtractedView(guess1: $guess1)
+                ExtractedView(guess1: $guess)
                 
                 CodeChoiceView(
                     codePeg: codePeg1,
                     id: "color1",
-                    guess: $guess1
+                    guess: $guess
                 )
             }
             .onAppear { self.viewInspectorHook?(self) }
