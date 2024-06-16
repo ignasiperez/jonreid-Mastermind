@@ -24,7 +24,7 @@ struct GameScreen: View {
         ZStack {
             backgroundColor.ignoresSafeArea()
             HStack {
-                ExtractedView(guess1: $guess)
+                CodeGuessView(guess1: $guess)
                 
                 CodeChoiceView(
                     codePeg: codePeg1,
@@ -37,7 +37,7 @@ struct GameScreen: View {
     }
 } // GameScreen
 
-private struct ExtractedView: View {
+private struct CodeGuessView: View {
     @Binding var guess1: CodePeg?
     
     var body: some View {
