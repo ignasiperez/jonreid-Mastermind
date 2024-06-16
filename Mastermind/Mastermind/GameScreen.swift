@@ -45,6 +45,11 @@ private struct CodeGuessView: View {
             
         }, label: {
             Circle()
+                .padding(10)
+                .overlay {
+                    Circle()
+                        .strokeBorder(unselectedColor)
+                }
                 .foregroundColor(guess?.color ?? unselectedColor)
                 .frame(width: 100, height: 100)
         })
