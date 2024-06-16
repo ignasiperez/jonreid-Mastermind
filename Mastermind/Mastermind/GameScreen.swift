@@ -24,7 +24,7 @@ struct GameScreen: View {
         ZStack {
             backgroundColor.ignoresSafeArea()
             HStack {
-                CodeGuessView(guess1: $guess)
+                CodeGuessView(guess: $guess)
                 
                 CodeChoiceView(
                     codePeg: codePeg1,
@@ -38,14 +38,14 @@ struct GameScreen: View {
 } // GameScreen
 
 private struct CodeGuessView: View {
-    @Binding var guess1: CodePeg?
+    @Binding var guess: CodePeg?
     
     var body: some View {
         Button(action: {
             
         }, label: {
             Circle()
-                .foregroundColor(guess1?.color ?? .red)
+                .foregroundColor(guess?.color ?? unselectedColor)
                 .frame(width: 100, height: 100)
         })
         .id("guess1")
