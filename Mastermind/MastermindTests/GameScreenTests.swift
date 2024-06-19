@@ -5,7 +5,7 @@ import SwiftUI
 
 final class GameScreenTests: XCTestCase {
     
-    func test_tappingBlueColor_shouldTurnGuessBlue() throws {
+    func test_tappingColor1_SetsGuessColor() throws {
         // Get the game screen
         var sut = GameScreen()
         var color = try getColorOfGuess(try sut.inspect())
