@@ -22,7 +22,7 @@ struct GameScreen: View {
     
     var body: some View {
         ZStack {
-            backgroundColor.ignoresSafeArea()
+            Color.background.ignoresSafeArea()
             HStack {
                 CodeGuessView(guess: $guess)
                 
