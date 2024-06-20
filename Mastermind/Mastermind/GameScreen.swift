@@ -4,7 +4,7 @@ struct CodeChoice {
     var color: Color
 }
 
-let codePeg1 = CodeChoice(color: .blue)
+let codeChoice1 = CodeChoice(color: .blue)
 
 struct GameScreen: View {
     @State private var guess: CodeChoice?
@@ -17,7 +17,7 @@ struct GameScreen: View {
                 CodeGuessView(guess: $guess)
                 
                 CodeChoiceView(
-                    codePeg: codePeg1,
+                    codePeg: codeChoice1,
                     id: "color1",
                     guess: $guess
                 )
