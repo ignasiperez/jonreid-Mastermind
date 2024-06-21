@@ -5,8 +5,9 @@ struct CodeChoice {
     let codeValue: Int
 }
 
-let codeChoice1 = CodeChoice(color: .blue, codeValue: 1)
-let codeChoices = [codeChoice1]
+let codeChoice1 = CodeChoice(color: .brown, codeValue: 1)
+let codeChoice2 = CodeChoice(color: .black, codeValue: 2)
+let codeChoices = [codeChoice2, codeChoice1]
 
 struct GameScreen: View {
     @State private var guess: CodeChoice?
@@ -17,16 +18,19 @@ struct GameScreen: View {
             Color.background.ignoresSafeArea()
             HStack {
                 CodeGuessView(guess: $guess)
-                ForEach(codeChoices, id: \.codeValue) { codeChoice in
-                    CodeChoiceView(
-                        codePeg: codeChoice1,
-                        id: "color1",
-                        guess: $guess
-                    )
+                VStack {
+                    ForEach(codeChoices, id: \.codeValue) { codeChoice in
+                        CodeChoiceView(
+                            codePeg: codeChoice,
+                            id: "color\(codeChoice.codeValue)",
+                            guess: $guess
+                        )
+                    }
                 }
             }
             .onAppear { self.viewInspectorHook?(self) }
-        }
+            
+        }  // ZStack
     }
 } // GameScreen
 
