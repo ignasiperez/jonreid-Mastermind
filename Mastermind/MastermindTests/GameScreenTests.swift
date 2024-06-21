@@ -14,7 +14,7 @@ final class GameScreenTests: XCTestCase {
         
         display(&sut) { view in
             // Tap code choice button
-            try view.find(viewWithId: "color\(codeChoice.codeValue)").button().tap()
+            try view.find(viewWithId: codeChoice.codeValue).button().tap()
             
             // Update the guess color
             color = try self.getColorOfGuess(view)

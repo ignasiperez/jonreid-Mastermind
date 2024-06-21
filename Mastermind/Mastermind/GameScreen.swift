@@ -22,7 +22,7 @@ struct GameScreen: View {
                     ForEach(codeChoices, id: \.codeValue) { codeChoice in
                         CodeChoiceView(
                             codePeg: codeChoice,
-                            id: "color\(codeChoice.codeValue)",
+                            id: codeChoice.codeValue,
                             guess: $guess
                         )
                     }
@@ -56,7 +56,7 @@ private struct CodeGuessView: View {
 
 private struct CodeChoiceView: View {
     var codePeg: CodeChoice
-    var id: String
+    var id: Int
     @Binding var guess: CodeChoice?
     
     var body: some View {
