@@ -19,7 +19,7 @@ final class GameScreenTests: XCTestCase {
             color = try self.getColorOfGuess(view)
         }
         
-        XCTAssertEqual(color, Color.blue)
+        XCTAssertEqual(color, Color.brown)
     }
     
     private func display(
