@@ -16,6 +16,7 @@
 		6BB9ADF72C456B0C00458BD5 /* Testableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB9ADF62C456B0C00458BD5 /* Testableview.swift */; };
 		6BB9ADF92C456BAE00458BD5 /* UpdateTestableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB9ADF82C456BAE00458BD5 /* UpdateTestableView.swift */; };
 		6BB9ADFB2C45844A00458BD5 /* CodeChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB9ADFA2C45844A00458BD5 /* CodeChoice.swift */; };
+		6BB9ADFD2C45866D00458BD5 /* CodeChoiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB9ADFC2C45866D00458BD5 /* CodeChoiceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		6BB9ADF62C456B0C00458BD5 /* Testableview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Testableview.swift; sourceTree = "<group>"; };
 		6BB9ADF82C456BAE00458BD5 /* UpdateTestableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateTestableView.swift; sourceTree = "<group>"; };
 		6BB9ADFA2C45844A00458BD5 /* CodeChoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeChoice.swift; sourceTree = "<group>"; };
+		6BB9ADFC2C45866D00458BD5 /* CodeChoiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeChoiceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 			children = (
 				6B1BE7F52BEA8BCD0025AC58 /* GameScreenTests.swift */,
 				6BB9ADF82C456BAE00458BD5 /* UpdateTestableView.swift */,
+				6BB9ADFC2C45866D00458BD5 /* CodeChoiceTests.swift */,
 			);
 			path = MastermindTests;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BB9ADFD2C45866D00458BD5 /* CodeChoiceTests.swift in Sources */,
 				6B1BE7F62BEA8BCD0025AC58 /* GameScreenTests.swift in Sources */,
 				6BB9ADF92C456BAE00458BD5 /* UpdateTestableView.swift in Sources */,
 			);
