@@ -21,9 +21,8 @@ struct CodeChoiceGenerator {
         //  }
 //      return colors.prefix(count).enumerated().map { index, color in
         return colors.enumerated().map { index, color in
-            CodeChoice(color: color, codeValue: index + 1)
+            CodeChoice(color: color, codeValue: 1)
         }
-        //      return [CodeChoice(color: .red, codeValue: 1)]
     }
 }
 
