@@ -13,12 +13,17 @@ struct CodeChoice: Equatable {
 }
 
 struct CodeChoiceGenerator {
-    static func generate(from colors: [Color], take: Int) throws -> [CodeChoice] {
+    static func generate(
+        from colors: [Color], take count: Int
+    ) throws -> [CodeChoice] {
         //  guard colors.count >= count else {
         //      throw CodeChoiceGeneratorError.notEnoughColors
         //  }
-        //  return colors.prefix(count).enumerated().map { index, color in
-        return [CodeChoice(color: .red, codeValue: 1)]
+//      return colors.prefix(count).enumerated().map { index, color in
+        return colors.enumerated().map { index, color in
+            CodeChoice(color: color, codeValue: index + 1)
+        }
+        //      return [CodeChoice(color: .red, codeValue: 1)]
     }
 }
 
