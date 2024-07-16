@@ -14,5 +14,14 @@ final class CodeChoiceTests: XCTestCase {
                                                       take: 1)
         XCTAssertEqual(result, [CodeChoice(color: .red, codeValue: 1)])
     }
+    
+    func test_generateTwoCodeChoices() throws {
+        let result = try CodeChoiceGenerator.generate(from: [.red, .blue],
+                                                      take: 2)
+        XCTAssertEqual(result, [
+                        CodeChoice(color: .red, codeValue: 1),
+                        CodeChoice(color: .blue, codeValue: 2)
+                       ])
+    }
 
 } // CodeChoiceTests
