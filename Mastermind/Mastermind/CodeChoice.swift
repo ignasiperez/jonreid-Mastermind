@@ -19,12 +19,11 @@ struct CodeChoiceGenerator {
         //  guard colors.count >= count else {
         //      throw CodeChoiceGeneratorError.notEnoughColors
         //  }
-//      return colors.prefix(count).enumerated().map { index, color in
-        return colors.enumerated().map { index, color in
+        return colors.prefix(count).enumerated().map { index, color in
             CodeChoice(color: color, codeValue: 1)
         }
-    }
-}
+    } // generate(from:take)
+} // CodeChoiceGenerator
 
 
 let codeChoice1 = CodeChoice(color: .brown, codeValue: 1)
