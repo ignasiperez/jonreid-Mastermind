@@ -36,8 +36,7 @@ let codeColors: [Color] = [
     .yellow, .orange, .red,.gray
 ]
 
-let codeChoice1 = CodeChoice(color: .brown, codeValue: 1)
-let codeChoices = [codeChoice1]
+let codeChoices = [CodeChoice(color: .brown, codeValue: 1)]
 
 class Game {
     let codeChoices: [CodeChoice]
