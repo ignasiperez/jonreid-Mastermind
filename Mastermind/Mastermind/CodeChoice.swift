@@ -41,12 +41,12 @@ let codeChoices = [CodeChoice(color: .brown, codeValue: 1)]
 class Game {
     let codeChoices: [CodeChoice]
     
-    init() throws {
+    init(numberOfCodeChoices: Int) throws {
         codeChoices = try CodeChoiceGenerator.generate(from: codeColors,
-                                                       take: 1)
+                                                       take: numberOfCodeChoices)
     }
     
-}
+} // Game
 
 
 

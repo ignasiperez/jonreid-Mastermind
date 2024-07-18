@@ -2,8 +2,13 @@ import SwiftUI
 
 
 struct GameScreen: TestableView {
+    @State private var game: Game
     @State private var guess: CodeChoice?
-    internal var viewInspectorHook: ((Self) -> Void)?
+    var viewInspectorHook: ((Self) -> Void)?
+    
+    init(game: Game = try! Game(numberOfCodeChoices: 1)) {
+        self.game = game
+    }
     
     var body: some View {
         ZStack {
