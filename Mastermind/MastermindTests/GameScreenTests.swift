@@ -5,6 +5,16 @@ import SwiftUI
 
 final class GameScreenTests: XCTestCase {
     
+    @MainActor func test_initialColorGuess_isUnselected() throws {
+        let game = try Game(numberOfCodeChoices: 1)
+        let sut = GameScreen(game: game)
+        
+        let color = try getColorOfGuess(try sut.inspect())
+        
+        XCTAssertEqual(color, Color.unselected)
+    }
+    
+    
     @MainActor func test_tappingCodeChoiceSetsGuessColor() throws {
         let game = try Game(numberOfCodeChoices: 1)
         var sut = GameScreen(game: game)
