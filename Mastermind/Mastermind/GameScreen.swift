@@ -6,7 +6,7 @@ struct GameScreen: TestableView {
     @State private var guess: CodeChoice?
     var viewInspectorHook: ((Self) -> Void)?
     
-    init(game: Game = try! Game(numberOfCodeChoices: 1)) {
+    init(game: Game) {
         self.game = game
     }
     
@@ -74,5 +74,5 @@ private struct CodeChoiceView: View {
 } // CodeChoiceView
 
 #Preview {
-    GameScreen()
+    GameScreen(game: try! Game(numberOfCodeChoices: 4))
 }

@@ -5,7 +5,7 @@ struct MastermindApp: App {
     var body: some Scene {
         WindowGroup {
             if isProduction {
-                GameScreen()
+                GameScreen(game: try! Game(numberOfCodeChoices: 2))
             }
         }
     }
