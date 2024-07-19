@@ -16,7 +16,7 @@ struct GameScreen: TestableView {
             HStack {
                 CodeGuessView(guess: $guess)
                 VStack {
-                    ForEach(codeChoices, id: \.codeValue) { codeChoice in
+                    ForEach(game.codeChoices, id: \.codeValue) { codeChoice in
                         CodeChoiceView(
                             codePeg: codeChoice,
                             id: codeChoice.codeValue,
