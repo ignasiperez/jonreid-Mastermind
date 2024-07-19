@@ -24,6 +24,7 @@ struct GameScreen: TestableView {
                         )
                     }
                 }
+                .id("codeChoices")
             }
             .onAppear { self.viewInspectorHook?(self) }
             
