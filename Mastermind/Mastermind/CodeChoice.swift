@@ -36,7 +36,7 @@ let codeColors: [Color] = [
     .yellow, .orange, .red,.gray
 ]
 
-class Game {
+final class Game {
     let codeChoices: [CodeChoice]
     
     init(numberOfCodeChoices: Int) throws {
