@@ -16,7 +16,8 @@ struct GameScreen: TestableView {
             HStack {
                 CodeGuessView(guess: $guess)
                 VStack {
-                    ForEach(game.codeChoices.reversed(), id: \.codeValue) { codeChoice in
+                    ForEach(game.codeChoices.reversed(), 
+                            id: \.codeValue) { codeChoice in
                         CodeChoiceView(
                             codePeg: codeChoice,
                             id: codeChoice.codeValue,
