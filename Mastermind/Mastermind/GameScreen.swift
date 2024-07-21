@@ -3,7 +3,7 @@ import SwiftUI
 
 struct GameScreen: TestableView {
     @State private var game: Game
-    @State private var guess: CodeChoice?
+    @State private var guess1: CodeChoice?
     var viewInspectorHook: ((Self) -> Void)?
     
     init(game: Game) {
@@ -14,18 +14,8 @@ struct GameScreen: TestableView {
         ZStack {
             Color.background.ignoresSafeArea()
             HStack {
-                CodeGuessView(guess: $guess)
-                VStack {
-                    ForEach(game.codeChoices.reversed(), 
-                            id: \.codeValue) { codeChoice in
-                        CodeChoiceView(
-                            codePeg: codeChoice,
-                            id: codeChoice.codeValue,
-                            guess: $guess
-                        )
-                    }
-                }
-                .id("codeChoices")
+                CodeGuessView(guess: $guess1)
+                CodeChoicesView(game: $game, guess1: $guess1)
             }
             .onAppear { self.viewInspectorHook?(self) }
             
