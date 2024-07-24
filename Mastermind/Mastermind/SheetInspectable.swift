@@ -8,7 +8,7 @@
 import SwiftUI
 
 extension View {
-    func sheetInspectable<Sheet>(
+    func inspectableSheet<Sheet>(
         isPresented: Binding<Bool>,
         onDismiss: (() -> Void)? = nil,
         @ViewBuilder content: @escaping () -> Sheet

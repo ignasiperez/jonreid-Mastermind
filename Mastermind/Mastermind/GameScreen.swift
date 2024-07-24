@@ -17,9 +17,12 @@ struct GameScreen: TestableView {
                 CodeGuessView(guess: $guess1)
                 CodeChoicesView(game: $game, guess1: $guess1)
             }
-            .onAppear { self.viewInspectorHook?(self) }
-            
         }  // ZStack
+        .inspectableSheet(isPresented: .constant(true),
+               content: {
+            Text("Boo")
+        })
+        .onAppear { self.viewInspectorHook?(self) }
     }
 } // GameScreen
 
