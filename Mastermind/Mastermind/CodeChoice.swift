@@ -38,6 +38,7 @@ let codeColors: [Color] = [
 
 final class Game {
     let codeChoices: [CodeChoice]
+    var secret: [CodeChoice] = []
     
     init(numberOfCodeChoices: Int) throws {
         codeChoices = try CodeChoiceGenerator.generate(from: codeColors,
