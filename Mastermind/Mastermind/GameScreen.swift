@@ -17,7 +17,7 @@ struct GameScreen: TestableView {
                 CodeChoicesView(game: $game, guess1: $guess1)
             }
         }  // Color
-        .inspectableSheet(isPresented: .constant(true),
+        .inspectableSheet(isPresented: .constant(guess1 != nil),
                content: {
             Text("Boo")
         })
