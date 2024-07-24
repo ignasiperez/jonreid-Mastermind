@@ -19,7 +19,11 @@ struct GameScreen: TestableView {
         }  // Color
         .inspectableSheet(isPresented: .constant(guess1 != nil),
                content: {
-            Text("You lose!")
+            if (game.secret == [guess1]) {
+                Text("You win!")
+            } else {
+                Text("You lose!")
+            }
         })
         .onAppear { self.viewInspectorHook?(self) }
     }
