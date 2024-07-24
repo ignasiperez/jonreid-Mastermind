@@ -11,13 +11,12 @@ struct GameScreen: TestableView {
     }
     
     var body: some View {
-        ZStack {
-            Color.background.ignoresSafeArea()
+        Color.background.ignoresSafeArea().overlay {
             HStack {
                 CodeGuessView(guess: $guess1)
                 CodeChoicesView(game: $game, guess1: $guess1)
             }
-        }  // ZStack
+        }  // Color
         .inspectableSheet(isPresented: .constant(true),
                content: {
             Text("Boo")
