@@ -45,6 +45,10 @@ final class Game {
                                                        take: numberOfCodeChoices)
     }
     
+    func isGuessCorrect(_ guess: [CodeChoice]) -> Bool {
+        return secret == guess
+    }
+    
 } // Game
 
 
